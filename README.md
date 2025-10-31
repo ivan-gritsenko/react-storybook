@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# 🌟 React Storybook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small **React + TypeScript** component library built with **Storybook** as part of a front-end engineer test task.  
+The library includes reusable UI components with animations, state handling, and interactive examples.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack
+- **React + TypeScript**
+- **Vite**
+- **Storybook 8**
+- **ESLint + Prettier** for code style
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+Examples:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Input in text/password modes**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<img width="760" height="680" alt="image" src="https://github.com/user-attachments/assets/57965f0b-74a4-438d-8c9b-d5cb844544bc" />
+<img width="716" height="681" alt="image" src="https://github.com/user-attachments/assets/9d0df8bd-bf14-42cd-a023-2560d061f14b" />
+<img width="823" height="678" alt="image" src="https://github.com/user-attachments/assets/62bc3a4b-0d75-4982-b39f-96a9530d401f" />
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Toast success/error**
+<img width="2557" height="927" alt="image" src="https://github.com/user-attachments/assets/53534e4c-aaf2-4602-9823-83548b062427" />
+<img width="2553" height="925" alt="image" src="https://github.com/user-attachments/assets/839a2b81-805a-4dc5-95ea-e2c0b639883d" />
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Sidebar Menu open and closed states**
+<img width="2556" height="832" alt="image" src="https://github.com/user-attachments/assets/efd7b5b7-932d-4f2c-a8b0-7dac7ad41364" />
